@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LecteurVue</class>
+ <widget class="QMainWindow" name="LecteurVue">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>876</width>
+    <height>182</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LecteurVue</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="VLActionLecteur">
+      <item>
+       <widget class="QRadioButton" name="bOnOff">
+        <property name="text">
+         <string>Allumer/Eteindre</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bOuvrirTiroir">
+        <property name="text">
+         <string>Ouvrir tiroir</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bInsererCD">
+        <property name="text">
+         <string>Inserer un CD</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bRetirerCd">
+        <property name="text">
+         <string>Retirer CD</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bFermerTiroir">
+        <property name="text">
+         <string>Fermer tiroir</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="GrCentre">
+      <item row="0" column="0">
+       <widget class="QLabel" name="lbhautParleurDroit">
+        <property name="text">
+         <string>haut parleur gauche</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="lbPochette">
+          <property name="maximumSize">
+           <size>
+            <width>167</width>
+            <height>167</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Pochette</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbintituleCD">
+          <property name="text">
+           <string>Intitulé du cd </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbGenre">
+          <property name="text">
+           <string>Genre</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbintituleMusique">
+          <property name="text">
+           <string>Intitulé de la musique</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="lbhautParleurGauche">
+        <property name="text">
+         <string>haut parleur droit</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="HTempMusic">
+        <item>
+         <widget class="QLabel" name="lbTempActMusic">
+          <property name="text">
+           <string>Temps actuel de  la musique jouée</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbTempTotMusic">
+          <property name="text">
+           <string>Temps total de la musique jouée</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="2">
+       <layout class="QHBoxLayout" name="HLTitre">
+        <item>
+         <widget class="QLabel" name="lbrangTitre">
+          <property name="text">
+           <string>rang du titre</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbNbTitres">
+          <property name="text">
+           <string>nombre de titre</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <layout class="QHBoxLayout" name="HBAction">
+        <item>
+         <widget class="QPushButton" name="bBoucle">
+          <property name="text">
+           <string>Boucle</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bPrecedent">
+          <property name="text">
+           <string>précédent</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bPause">
+          <property name="text">
+           <string>Pause</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bArreter">
+          <property name="text">
+           <string>Arreter</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bSuivant">
+          <property name="text">
+           <string>suivant</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bAuto">
+          <property name="text">
+           <string>Auto</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bAleatoire">
+          <property name="text">
+           <string>ALeatoire</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="VLSon">
+      <item>
+       <widget class="QPushButton" name="bActiverSon">
+        <property name="text">
+         <string>Activer Son</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bDesactiverSon">
+        <property name="text">
+         <string>Desactiver Son</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="slideSon">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbVolumeActuel">
+        <property name="text">
+         <string>SonActuel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="BarreEnHauteur">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>876</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

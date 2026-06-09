@@ -1,0 +1,16 @@
+debug/LecteurCD.o
+debug/cd.o
+debug/cellule.o
+debug/database.o
+debug/dialog.o
+debug/main.o
+debug/lecteurvue.o
+debug/sortieson.o
+debug/tiroircd.o
+debug/titre.o
+debug/moc_LecteurCD.o
+debug/moc_cellule.o
+debug/moc_dialog.o
+debug/moc_lecteurvue.o
+debug/moc_sortieson.o
+debug/moc_tiroircd.o
